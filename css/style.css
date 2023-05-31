@@ -432,6 +432,9 @@ footer .logo-footer {
 }
 .footer-contant {
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-contant a {
   color: hsl(167, 40%, 24%, 0.8);
@@ -445,6 +448,11 @@ footer .logo-footer {
 .footer-contant a:hover {
   color: white;
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .social-icons a {
   margin: 0 20px;
   transition: var(--transition-duration);
@@ -456,6 +464,14 @@ footer .logo-footer {
 .social-icons a:hover {
   filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(133deg)
     brightness(150%) contrast(101%);
+}
+@media (max-width: 768px) {
+  .footer-contant a {
+    margin: 0 20px;
+  }
+  .social-icons a {
+    margin: 0 10px;
+  }
 }
 /* end footer */
 /* start Copyrights */
